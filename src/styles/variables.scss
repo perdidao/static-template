@@ -1,0 +1,47 @@
+@function vw($value, $base: "desktop") {
+  @if $base == "notebook" {
+    $base: 1440;
+  } @else if $base == "mobile" {
+    $base: 640;
+  } @else {
+    $base: 1920;
+  }
+
+  @return #{($value * 100) / $base}vw;
+}
+
+// Font
+$font-text: 'Poppins', sans-serif;
+$font-title: 'Termina', sans-serif;
+
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+
+$font-size-xxs: vw(12);
+$font-size-xs: vw(14);
+$font-size-s: vw(16);
+$font-size-m: vw(18);
+$font-size-l: vw(20);
+$font-size-xl: vw(24);
+$font-size-xxl: vw(48);
+$font-size-giga: vw(64);
+
+// Color
+$color-primary: #85426b;
+$color-secondary: #f2abac;
+$color-terciary: #f6ebde;
+$color-quaternary: #ffe8fd;
+
+$color-title: #333333;
+$color-text: #333333;
+$color-white: #ffffff;
+$color-black: #000000;
+
+// Spacing
+$spacing-xxs: vw(4);
+$spacing-xs: vw(8);
+$spacing-s: vw(16);
+$spacing-m: vw(24);
+$spacing-l: vw(32);
+$spacing-xl: vw(48);
+$spacing-xxl: vw(64);

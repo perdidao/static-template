@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+@font-face {
+    font-family: 'Termina';
+    src: url('../assets/fonts/Termina-Bold.woff2') format('woff2'),
+        url('../assets/fonts/Termina-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Termina';
+    src: url('../assets/fonts/Termina-Medium.woff2') format('woff2'),
+        url('../assets/fonts/Termina-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
